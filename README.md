@@ -1,0 +1,2 @@
+# fc-muddles
+In an effort to crack through the interview process, the number of problems that a developer must know and understand is overwhelming.  It feels like a chaotic muddle of problems that you must know. Frankly, it is hard to determine if a Software Engineer is good at being a Software Engineer if the basis of the hiring is determined by the success of solving a problem from a site like LeetCode or HackerRank. So, this is a person effort by me to organize my thoughts and solve some problems.
