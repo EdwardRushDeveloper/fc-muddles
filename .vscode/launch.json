@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Graph-Matrix/NumberOfIslands/bin/Debug/net5.0/NumberOfIslands.dll",
+            "program": "${workspaceFolder}/DynamicProgramming/CoinChange/bin/Debug/net5.0/CoinChange.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Graph-Matrix/NumberOfIslands",
+            "cwd": "${workspaceFolder}/DynamicProgramming/CoinChange",
             "console": "internalConsole",
             "stopAtEntry": false
         },

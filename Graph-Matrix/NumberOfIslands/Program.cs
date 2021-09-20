@@ -6,7 +6,13 @@ namespace NumberOfIslands
     class Program
     {
 
-        /*  Links and Help Resources 
+        /*  
+        
+        200. Number of Islands
+        Difficulty : Medium
+        DFS Search 
+        
+            Links and Help Resources 
 
             Number of Islands Leet Code
             https://leetcode.com/problems/number-of-islands/
