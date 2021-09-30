@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/DynamicProgramming/CoinChange/bin/Debug/net5.0/CoinChange.dll",
+            "program": "${workspaceFolder}/Array/MaximumLengthOfConcatenatedString/bin/Debug/net5.0/MaximumLengthOfConcatenatedString.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/DynamicProgramming/CoinChange",
+            "cwd": "${workspaceFolder}/Array/MaximumLengthOfConcatenatedString",
             "console": "internalConsole",
             "stopAtEntry": false
         },
