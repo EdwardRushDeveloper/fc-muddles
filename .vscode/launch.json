@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Array/MaximumLengthOfConcatenatedString/bin/Debug/net5.0/MaximumLengthOfConcatenatedString.dll",
+            "program": "${workspaceFolder}/Array/ReverseString/bin/Debug/net5.0/ReverseString.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Array/MaximumLengthOfConcatenatedString",
+            "cwd": "${workspaceFolder}/Array/ReverseString",
             "console": "internalConsole",
             "stopAtEntry": false
         },
