@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Array/ReverseString/bin/Debug/net5.0/ReverseString.dll",
+            "program": "${workspaceFolder}/LinkedList/ReverseLinkedList/bin/Debug/net5.0/ReverseLinkedList.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Array/ReverseString",
+            "cwd": "${workspaceFolder}/LinkedList/ReverseLinkedList",
             "console": "internalConsole",
             "stopAtEntry": false
         },
