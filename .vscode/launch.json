@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/LinkedList/ReverseLinkedList/bin/Debug/net5.0/ReverseLinkedList.dll",
+            "program": "${workspaceFolder}/LinkedList/LRUCache/bin/Debug/net5.0/LRUCache.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/LinkedList/ReverseLinkedList",
+            "cwd": "${workspaceFolder}/LinkedList/LRUCache",
             "console": "internalConsole",
             "stopAtEntry": false
         },
