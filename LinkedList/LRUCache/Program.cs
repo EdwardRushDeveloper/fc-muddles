@@ -148,10 +148,6 @@ namespace LRUCache
                 current = new ListNode(key, value);
                 _cache.Add(current.Key, current);
             }
-
-            
-
-
         }
 
 
@@ -182,7 +178,6 @@ namespace LRUCache
             previous.Next = next;
 
             //the current ListItem is now removed.  
-
         }
 
 
