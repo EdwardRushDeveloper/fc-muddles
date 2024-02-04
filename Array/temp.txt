@@ -1,0 +1,28 @@
+Enterprise Resource Planning (ERP) Cutover: At Lance Inc. and Snyders-Lance Inc. Lead Architect and Developer with Field Sales DSD (Direct Store Delivery) Mobile Application, and Central Billing ASP.NET Server Application. The Mobile Application was responsible for generating Invoices and electronically communicating them to markets such as Publix and other Markets based on Chain requirements.  Migrating from AS400 to Oracle, responsible for implementation of cutover operations for both new and legacy systems, where the transition from one system to the next system was done in minutes (cutover from one system to another). Stakes being high, the result was a 100% successful operation. This operation was done at two different times with my Career at Snyders-Lance where company mergers required us to sunset AS400 systems. There was four thousand Mobile Routes through-out the nation affected.
+
+Develop Database Partitioned system to handle PDF binary files and invoice data. There were between fifty to seventy thousand PDF images uploaded daily from the field sales DSD Mobile Application.
+
+Data Entry Application / Data Integration for Mobile and Tax API Processing. While with Swisher Hygiene, responsible for Integrations from Mobile communications, and customer tax reporting. Also responsible for architecting and developing a data entry web application where data entry clerks would key invoice and payment information received through the mail.
+
+Development of rewards application using Xamarin Forms, Microservice with Azure Functions, Service Bus, AS400 and Azure SQL for AAA of the Carolinas. Developed system to collect visual element statistics so that Xamarin Forms rendering would render correctly in Android, iOS 
+
+Develop Microservice caching system working with SAP to capture SAP Events though a system called EISv2 to reduce SAP API RFC calls by Microsoft Invoicing system. The reduction in calls to the SAP API system was reduced by 1.8 million calls per month.
+
+Developed system in Microsoft Sales System using Functional Style developing with Scala to build count validation between parquet files used for Spark process and SQL Server Data Factory.
+
+Application Service and ASP.NET integration for Authentication and Authorization with Salesforce using OAuth.
+
+While working with Parker Hannifin, developed a Web based application to scanning with USB connection barcode scanners. Wrote a JavaScript parsing engine to capture scan data from incoming data streams to the web browser.
+
+
+
+Cloud: Azure Platform as a Service (PaaS) | Azure Software as a Service (SaaS) | Azure Infrastructure as a Service (IaaS) | Azure Functions | Azure SqlServer | Azure AppServices | Storage Account Queues | Blob Storage | Table Storage | Logic Apps | .NET | KQL (Kusto Query Language) | Azure DevOps (ARM) | Service Bus | Azure Data Explorer
+SOA (Service Driven Architecture): Web Services | WCF | WebAPI
+Architectures-Patterns-Standards: Domain-Driven Design (DDD) | Microservices | MVVM | REST | OAuth | OpenID | SOAP Services
+Languages: C# | Javascript | VB.NET | Scala
+Cross-Platform: Xamarin | Xamarin.Forms | Xamarin.iOS | .NET Core | .NET Standard
+Database: Azure SqlServer | SqlServer | SqlCLR | TSQL | Oracle | PL/SQL 
+Mobile: Xamarin | Xamarin.Forms for Android and iOS| Xamarin.iOS | .NET Compact Framework for Windows CE | Windows Mobile 5 – 6.5
+Source Control: Azure DevOps | GIT | GITHub | TFS | BitBucket | SourceSafe
+SDLC: Agile | Scrum | Scrum Master
+Testing: XUnit, and some NUnit
