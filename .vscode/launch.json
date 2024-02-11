@@ -5,20 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
+            "name": "C#: Fibonacci Debug",
+            "type": "dotnet",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/LinkedList/ReverseLinkedList/bin/Debug/net5.0/ReverseLinkedList.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/LinkedList/ReverseLinkedList",
-            "console": "internalConsole",
-            "stopAtEntry": false
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
+            "projectPath": "${workspaceFolder}/DynamicProgramming/Fibonacci/Fibonacci.csproj"
+            
         }
+
     ]
 }

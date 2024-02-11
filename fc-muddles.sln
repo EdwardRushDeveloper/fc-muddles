@@ -1,64 +1,34 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.002.0
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Array", "Array", "{332DDAB3-3262-414C-8BF4-D05D88BCB44B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicProgramming", "DynamicProgramming", "{8BB0AF0B-F781-4823-B7FE-7A570FF3B015}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseString", "Array\ReverseString\ReverseString.csproj", "{8FCD9FFD-BD76-47A2-81BA-1422299E11E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "DynamicProgramming\Fibonacci\Fibonacci.csproj", "{5831DC85-9C8B-4C70-8213-1494932796C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaximumLengthOfConcatenatedString", "Array\MaximumLengthOfConcatenatedString\MaximumLengthOfConcatenatedString.csproj", "{40967483-4D4A-4562-A317-9AE18CC2BB00}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedList", "LinkedList", "{1033BC2A-2709-46FC-BF52-9F0403387241}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseLinkedList", "LinkedList\ReverseLinkedList\ReverseLinkedList.csproj", "{5507C07A-5409-4846-B8A7-10B803AA3264}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Graph-Matrix", "Graph-Matrix", "{A4140FF0-C7C0-48B9-9CB3-3B390D39E32B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumberOfIslands", "Graph-Matrix\NumberOfIslands\NumberOfIslands.csproj", "{2B50E515-38C0-40D5-A5C3-1C35D6FCD939}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DynamicProgramming", "DynamicProgramming", "{6A418F47-7341-4163-A0D9-5073137038A8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoinChange", "DynamicProgramming\CoinChange\CoinChange.csproj", "{D743C282-45DA-4D1B-9752-548EDC03F6D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinChange", "DynamicProgramming\CoinChange\CoinChange.csproj", "{569BFE30-28FA-465A-9676-EB23506C3B1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8FCD9FFD-BD76-47A2-81BA-1422299E11E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FCD9FFD-BD76-47A2-81BA-1422299E11E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FCD9FFD-BD76-47A2-81BA-1422299E11E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FCD9FFD-BD76-47A2-81BA-1422299E11E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40967483-4D4A-4562-A317-9AE18CC2BB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40967483-4D4A-4562-A317-9AE18CC2BB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40967483-4D4A-4562-A317-9AE18CC2BB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40967483-4D4A-4562-A317-9AE18CC2BB00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5507C07A-5409-4846-B8A7-10B803AA3264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5507C07A-5409-4846-B8A7-10B803AA3264}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5507C07A-5409-4846-B8A7-10B803AA3264}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5507C07A-5409-4846-B8A7-10B803AA3264}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B50E515-38C0-40D5-A5C3-1C35D6FCD939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B50E515-38C0-40D5-A5C3-1C35D6FCD939}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B50E515-38C0-40D5-A5C3-1C35D6FCD939}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B50E515-38C0-40D5-A5C3-1C35D6FCD939}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D743C282-45DA-4D1B-9752-548EDC03F6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D743C282-45DA-4D1B-9752-548EDC03F6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D743C282-45DA-4D1B-9752-548EDC03F6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D743C282-45DA-4D1B-9752-548EDC03F6D0}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{8FCD9FFD-BD76-47A2-81BA-1422299E11E4} = {332DDAB3-3262-414C-8BF4-D05D88BCB44B}
-		{40967483-4D4A-4562-A317-9AE18CC2BB00} = {332DDAB3-3262-414C-8BF4-D05D88BCB44B}
-		{5507C07A-5409-4846-B8A7-10B803AA3264} = {1033BC2A-2709-46FC-BF52-9F0403387241}
-		{2B50E515-38C0-40D5-A5C3-1C35D6FCD939} = {A4140FF0-C7C0-48B9-9CB3-3B390D39E32B}
-		{D743C282-45DA-4D1B-9752-548EDC03F6D0} = {6A418F47-7341-4163-A0D9-5073137038A8}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5831DC85-9C8B-4C70-8213-1494932796C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5831DC85-9C8B-4C70-8213-1494932796C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5831DC85-9C8B-4C70-8213-1494932796C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5831DC85-9C8B-4C70-8213-1494932796C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569BFE30-28FA-465A-9676-EB23506C3B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569BFE30-28FA-465A-9676-EB23506C3B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569BFE30-28FA-465A-9676-EB23506C3B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569BFE30-28FA-465A-9676-EB23506C3B1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FAB56DFE-EEE1-490F-B648-A6E8BB2C64E6}
+	GlobalSection(NestedProjects) = preSolution
+		{5831DC85-9C8B-4C70-8213-1494932796C4} = {8BB0AF0B-F781-4823-B7FE-7A570FF3B015}
+		{569BFE30-28FA-465A-9676-EB23506C3B1F} = {8BB0AF0B-F781-4823-B7FE-7A570FF3B015}
 	EndGlobalSection
 EndGlobal
