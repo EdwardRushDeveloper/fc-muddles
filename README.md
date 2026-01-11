@@ -22,10 +22,9 @@ Requirements:
 1. [Visual Studio Code Download](https://code.visualstudio.com/download)
 2. [DotNet Download](https://dotnet.microsoft.com/download) that you can use to download DotNet. This includes all environments
    - For those that use Macbook you can use Homebrew to install the latest version of Dotnet.  ([Homebrew Install](https://formulae.brew.sh/cask/dotnet)) 
-3. Install the Omnisharp Extension for Visual Studio Code
-[OmniSharp Details](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
-![OmniSharp Extension](csharp-extension.png)
-![OmniSharp in Visual Studio Code](omnisharp-extension.png)
+3. Install the C# DevKit for Visual Studio Code
+[C# DevKit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+![C# DevKit](omnisharp-extension.png)
 
 
 ## Project Creation
@@ -34,7 +33,7 @@ Use the following files for creating your projects:
    ![Terminal Window](open-terminal.png)
 2. Macbook and Windows: Use mac-create-project.sh to run a Shell script that will prompt you for a project name to create in dotnet. This Shell file is simply a series of dotnet commands. **Insure your shell window is executing in the directory where the Shell file exists.**
 3. Enter the project name of choice(with the relative path of the folder it will be created in) and the project will be added to the folder. In our example we are going to create a folder called Graph-Matrix, and then create a project in that folder. 
-![Graph and Matrix](Graph-Matrix.png)
+![Graph and Matrix](graph-matrix.png)
 
  Run the Shell Command indicated in the screen shot below.
  ```shell
