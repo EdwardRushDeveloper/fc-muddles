@@ -5,8 +5,8 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
+            "name": "C#: Fibonacci Debug",
+            "type": "dotnet",
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/LinkedList/LRUCache/bin/Debug/net5.0/LRUCache.dll",

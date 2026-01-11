@@ -1,0 +1,125 @@
+
+
+Test shortcuts
+Skip to main content
+ALL
+1
+1. FizzBuzz
+
+Given a number n, for each integer i in the range from 1 to n inclusive, print one value per line as follows:
+ 
+If i is a multiple of both 3 and 5, print FizzBuzz.
+If i is a multiple of 3 (but not 5), print Fizz.
+If i is a multiple of 5 (but not 3), print Buzz.
+If i is not a multiple of 3 or 5, print the value of i.
+ 
+Function Description
+Complete the function fizzBuzz in the editor below.
+ 
+fizzBuzz has the following parameter(s):
+    int n:  upper limit of values to test (inclusive)
+Returns:    NONE
+Prints:
+    The function must print the appropriate response for each value i in the set {1, 2, ... n} in ascending order, each on a separate line.
+ 
+Constraints
+0 < n < 2 × 105
+Input Format for Custom Testing
+Input from stdin will be processed as follows and passed to the function.
+ 
+The single integer n, the limit of the range to test: [1, 2, ...n].
+Sample Case 0
+Sample Input
+STDIN    Function
+-----    --------
+15    →  n = 15
+ 
+Sample Output
+1     
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+
+
+
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+
+
+class Result
+{
+
+    /*
+     * Complete the 'fizzBuzz' function below.
+     *
+     * The function accepts INTEGER n as parameter.
+     */
+
+    public static void fizzBuzz(int n)
+    {
+        
+        //Console.WriteLine(n);
+        
+        for(int i = 1; i <= n; i++)
+        {
+            int mod3 = i % 3;
+            int mod5 = i % 5;
+            
+            //Console.WriteLine(mod3);
+            //Console.WriteLine(mod5);
+            if(mod3 == 0 && mod5 == 0)
+            {
+                Console.WriteLine("FizzBuzz");
+            }
+            
+            if(mod3 == 0 && mod5 != 0)
+            {
+                Console.WriteLine("Fizz");
+            }
+            
+            if(mod3 != 0 && mod5 == 0)
+            {
+                Console.WriteLine("Buzz");
+            }
+            
+            if(mod3 != 0 && mod5 != 0)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+
+}
+
+class Solution
+{
+    public static void Main(string[] args)
+    {
+        int n = Convert.ToInt32(Console.ReadLine().Trim());
+
+        Result.fizzBuzz(n);
+    }
+}
