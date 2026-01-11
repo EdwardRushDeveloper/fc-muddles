@@ -33,7 +33,7 @@ Use the following files for creating your projects:
    ![Terminal Window](open-terminal.png)
 2. Macbook and Windows: Use mac-create-project.sh to run a Shell script that will prompt you for a project name to create in dotnet. This Shell file is simply a series of dotnet commands. **Insure your shell window is executing in the directory where the Shell file exists.**
 3. Enter the project name of choice(with the relative path of the folder it will be created in) and the project will be added to the folder. In our example we are going to create a folder called Graph-Matrix, and then create a project in that folder. 
-![Graph and Matrix](Graph-Matrix.png)
+![Graph and Matrix](graph-matrix.png)
 
  Run the Shell Command indicated in the screen shot below.
  ```shell
