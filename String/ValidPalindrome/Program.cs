@@ -24,7 +24,7 @@ public class Palindrome
 
 
     public static bool IsPalindrome(string s) {
-        
+        return true;
     }
 
 }
