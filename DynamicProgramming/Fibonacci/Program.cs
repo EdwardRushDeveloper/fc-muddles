@@ -25,8 +25,13 @@ namespace Fibonacci
         static Dictionary<int, int> dictionary = new Dictionary<int, int>();
         public static void Main(string[] args)
         {
-            int n =  Fib(9, "Start");
+            int n =  Fib(12, "Start");
             System.Console.WriteLine($"Final Number {n}");
+
+            foreach (var kvp in dictionary)
+            {
+                Console.WriteLine($"Fib({kvp.Key}) = {kvp.Value}");
+            }
         }
 
         /// <summary>
@@ -37,25 +42,55 @@ namespace Fibonacci
         /// <returns>The calculation from the formula</returns>
         public static int Fib(int n, string t)
         {
+            
+            string invocationId = Guid.NewGuid().ToString("N").ToUpper();
+            
             //memoization of values already calculated
             //if the number has already been calculated with a recursive call
             //just return the number that has already been calculated for n
             int f = 0;
+
             if(dictionary.TryGetValue(n, out f))
             {
-                System.Console.WriteLine($"Dont Compute {n}: f {t}");
+                System.Console.WriteLine($"Already Computed for Number {n}: Value is {f}: InvoicationId {invocationId}");
+                System.Console.WriteLine($"");
                 return f;
             }
 
-            if (n <= 1) {
-                return n;
-            } else 
+            //base case for the recursion to prevent infinite calls
+            if (n <= 1) 
             {
-                System.Console.WriteLine($"Compute {n}, f {t}");
-                f =  Fib((n - 1), "One") + Fib((n - 2), "two");
+                Console.WriteLine($"InvocationId {invocationId}: Base Case Reached Fib({n}) = {n}");
+                System.Console.WriteLine($"");
+                return n;
+            } 
+            else 
+            {
+  
+                //First sub problem, calculate all of the left side of the tree first this will be Fn-1
+                //Then calculate the right side of the tree Fn-2. If the number has already been calculated
+                //it will be returned from the dictionary and not calculated again.
+                int ls = n - 1;
+                int rs = n - 2;
+                 
+                System.Console.WriteLine($"");
+                int leftReturn = Fib((ls), "Left  Side Recursive Call");
+
+                Console.WriteLine($"**********************InvocationId {invocationId}: Winding out to call Right Side Fib({rs}) after Left Side Fib({ls}) = Left Result is {leftReturn} ************************");
+                
+                System.Console.WriteLine($"");
+                int rightReturn = Fib((rs), "Right Side Recursive Call");
+
+                f = leftReturn + rightReturn;
+                Console.WriteLine($"InvocationId {invocationId}: Winding Out Results for Number({n}) = Fib({ls}) + Fib({rs}) OR {leftReturn} + {rightReturn} = {f} ");
+
+                System.Console.WriteLine($"");
+                System.Console.WriteLine($"");
             }          
             
             //memoization of values already calculated so the right side of the tree does not execute
+            Console.WriteLine($"Storing Computed Value for Number({n}) = {f} in Dictionary");
+            System.Console.WriteLine($"");
             dictionary.TryAdd(n, f);
 
             return f;
