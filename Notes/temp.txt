@@ -1,0 +1,155 @@
+using System;
+using System.Collections.Generic;
+					
+public class Program
+{
+	
+	/*
+	
+		1. Cache System with maximum capacity
+		2. Added items if they are not in the cache
+		3. Remove items once capacity is met
+	
+	
+	
+	
+	
+	*/
+	public static void Main()
+	{
+		
+		Cache cache = new Cache(3);
+		
+		cache.Put(1,10);
+		int value = cache.Get(1);
+		
+		Console.WriteLine($"Value : {value}");
+		
+
+		cache.Put(1, 1);
+		Console.WriteLine($"Put(1, 1)  cache: {cache}");
+		cache.Put(2, 2);
+		Console.WriteLine($"Put(2, 2)  cache: {cache}");
+		Console.WriteLine($"Get(1) = {cache.Get(1)}  expected 1   cache: {cache}");
+		
+		cache.Put(3, 3);
+		Console.WriteLine($"Put(3, 3)  cache: {cache}  (evicted 2)");
+		Console.WriteLine($"Get(2) = {cache.Get(2)} expected -1  cache: {cache}");
+		cache.Put(4, 4);
+		
+		Console.WriteLine($"Put(4, 4)  cache: {cache}  (evicted 1)");
+		Console.WriteLine($"Get(1) = {cache.Get(1)}  expected -1  cache: {cache}");
+		Console.WriteLine($"Get(3) = {cache.Get(3)}  expected 3   cache: {cache}");
+		Console.WriteLine($"Get(4) = {cache.Get(4)}  expected 4   cache: {cache}");
+
+		
+	}
+	
+	
+	
+	public class Node
+	{
+		public Node(int key, int value)
+		{
+			Key = key;
+			Value = value;
+		}
+		
+		public int Key {get;set;}
+		public int Value {get;set;}
+		
+		public Node Previous {get;set;}
+		public Node Next {get; set;}
+			
+	}
+	
+	public class Cache
+	{
+		#region Head and Tail
+			Node _head = null;
+		    Node _tail = null;
+		#endregion
+			
+		IDictionary<int,Node>_dictionary = default;
+		
+		protected int _capacity;
+		
+		public Cache(int capacity)
+		{
+			_capacity = capacity;
+			_dictionary = new Dictionary<int,Node>(capacity);
+			_head = new Node(0,0);
+			_tail = new Node(100,100);
+		}
+		
+		//get the node, if it exists
+		public int Get(int key)
+		{
+			int returnValue = -1;
+			Node output = default;
+			if(_dictionary.TryGetValue(key, out output))
+			{
+				//if the item exists, then we need to Move it to the front because it was accessed
+				MoveToFirst(output);
+				returnValue = output.Value;
+			}
+
+			return returnValue;
+			
+		}
+		
+		public void Put(int key, int value)
+		{
+			Node newNode = new(key, value);
+			Console.WriteLine(key);
+			Node output = default;
+			if(_dictionary.TryGetValue(key, out output))
+			{
+				Console.WriteLine($"Key Found with Value {output.Value}");
+				MoveToFirst(output);
+				return;
+			}
+			
+			//if the item is not found determine if the max capacity is hit
+			if(_dictionary.Count == _capacity)
+			{
+				//remove the last item from the linked list
+				 Node lastNode       = _tail.Previous;
+				_tail.Previous      = lastNode.Previous;
+				_tail.Previous.Next = _tail;
+				_dictionary.Remove(lastNode.Key);
+			}
+		}
+		
+  
+			   
+	    #region Add and Remove Items
+				//removes the node from the linked list
+			   protected void RemoveNode(Node current)
+				{
+					Node previous = current.Previous;
+					Node next = current.Next;
+					
+					previous.Next = next;
+					next.Previous = previous;
+				}
+			   //adds a node to the start of the linked list
+			   protected void AddNode(Node current)
+			   {
+					Node next = _head.Next;
+				    _head.Next = current;
+				   current.Next = next;
+				   next.Previous = current;
+				   current.Previous = _head;
+				   
+			   }
+				protected void MoveToFirst(Node node)
+				{
+					RemoveNode(node);
+					AddNode(node);
+				}
+
+		 #endregion
+		
+	}
+}

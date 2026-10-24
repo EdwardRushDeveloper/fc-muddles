@@ -9,6 +9,19 @@
             "name": "C#: Fibonacci Debug",
             "type": "dotnet",
             "request": "launch",
+<<<<<<< HEAD
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/LinkedList/LRUCache/bin/Debug/net5.0/LRUCache.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/LinkedList/LRUCache",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+=======
             "projectPath": "${workspaceFolder}/DynamicProgramming/Fibonacci/Fibonacci.csproj"
             
         },
@@ -17,6 +30,7 @@
             "type": "dotnet",
             "request": "launch",
             "projectPath": "${workspaceFolder}/Array/MergeIntervals/MergeIntervals.csproj"
+>>>>>>> master
         }
     ]
 }
