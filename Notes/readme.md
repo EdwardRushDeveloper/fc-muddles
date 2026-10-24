@@ -27,3 +27,22 @@ Usually sent for entry to mid-level SWE roles. Senior and rehire candidates ofte
 [Hacker Rank](https://www.hackerrank.com/dashboard)
 
 [DotNet Fiddle](https://dotnetfiddle.net/jKqpjy)
+
+
+
+
+
+
+# Helpful Links
+
+
+Platform was Hackerrank : 
+
+Problem Statement: An e-book provider offers a variety of programming articles, each with a distinct intellectual value. Readers earn points equal to an article's intellectual value for each article read twice. Given a list of articles with their page lengths, intellectual
+value coefficients, and a daily page limit, find the maximum achievable intellectual value in one day.
+
+The problem is a variant of the 0/1 Knapsack Problem where each item must be read twice, meaning its effective page weight is 2 * articles[i] and its reward is iv[i]
+
+[Microsoft Senior Software Engineer - online Assessment](https://leetcode.com/discuss/post/7279135/microsoft-senior-software-engineer-onlin-yxeo/)
+
+[Vmware Interview Question](https://vipulgupta-19290.medium.com/vmware-interview-question-fda2120fc9b9)
