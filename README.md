@@ -14,6 +14,24 @@ So what I will be covering in this REPO and on [my site](https://www.iamfullcode
 
 The problems will be mainly drawn from [LeetCode](https://leetcode.com).
 
+## Docs
+Quick reference notes on the core concepts:
+- [Data Structures](docs/data-structures/readme.md) - what they are and how to choose one
+- [O(log N)](docs/logN/readme.md) - the "cut it in half" idea behind binary search and balanced trees
+
+## Problems
+| # | Problem | Difficulty | Topic | Solution |
+|---|---|---|---|---|
+| 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Array | [Notes](Array/MergeIntervals/readme.md) · [Code](Array/MergeIntervals/Program.cs) |
+| 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Array | [Code](Array/ReverseString/Program.cs) |
+| 1239 | [Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | Medium | Array | [Code](Array/MaximumLengthOfConcatenatedString/Program.cs) |
+| 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | Dynamic Programming | [Code](DynamicProgramming/CoinChange/Program.cs) |
+| 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy | Dynamic Programming | [Notes](DynamicProgramming/Fibonacci/readme.md) · [Code](DynamicProgramming/Fibonacci/Program.cs) |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | Graph / Matrix | [Notes](Graph-Matrix/readme.md) · [Code](Graph-Matrix/NumberOfIslands/Program.cs) |
+| 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | Linked List | [Notes](LinkedList/LRUCache/readme.md) · [Code](LinkedList/LRUCache/Program.cs) · [Version 2](LinkedList/LRUCacheVersion2/Program.cs) |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked List | [Code](LinkedList/ReverseLinkedList/Program.cs) |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | String | [Code](String/ValidPalindrome/Program.cs) |
+
 
 ## Project Requirements
 The Solution is a Visual Studio Code collection of Projects. I mainly use this on a Macbook Pro, but given the nature of the cross platform capabilities of Visual Studio Code, this can be used on  Windows, Macbooks and Linux. **This is not a tutorial on installing DotNet and Visual Studio Code, so I am not providing those specifics.** However, you can use the shell command file on the Mac, and Windows(bash window with [Git Install](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
