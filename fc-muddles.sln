@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidPalindrome", "String\V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargestPossibleIntegerWithNegative", "Array\LargestPossibleIntegerWithNegative\LargestPossibleIntegerWithNegative.csproj", "{76A0D1FC-268A-45F3-8E0F-99DA96D6D1A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSumOfaPairWithEqualSumOfDigits", "Array\MaxSumOfaPairWithEqualSumOfDigits\MaxSumOfaPairWithEqualSumOfDigits.csproj", "{38AF288A-A4F0-403C-A73B-2F74B319C788}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -177,6 +179,18 @@ Global
 		{76A0D1FC-268A-45F3-8E0F-99DA96D6D1A3}.Release|x64.Build.0 = Release|Any CPU
 		{76A0D1FC-268A-45F3-8E0F-99DA96D6D1A3}.Release|x86.ActiveCfg = Release|Any CPU
 		{76A0D1FC-268A-45F3-8E0F-99DA96D6D1A3}.Release|x86.Build.0 = Release|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Debug|x64.Build.0 = Debug|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Debug|x86.Build.0 = Debug|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Release|x64.ActiveCfg = Release|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Release|x64.Build.0 = Release|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Release|x86.ActiveCfg = Release|Any CPU
+		{38AF288A-A4F0-403C-A73B-2F74B319C788}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,5 +207,6 @@ Global
 		{978A3398-F2DD-48CB-96D5-595CDAEAA56E} = {CABA8FBE-61DC-207E-DB91-9F8A48B88855}
 		{3203B09A-F712-40F2-B65B-03053FF59B01} = {13434C82-356F-551A-6C16-4AD5F6C3DB5F}
 		{76A0D1FC-268A-45F3-8E0F-99DA96D6D1A3} = {8F9A096E-4E6F-0AE2-7328-1551D8C9161B}
+		{38AF288A-A4F0-403C-A73B-2F74B319C788} = {8F9A096E-4E6F-0AE2-7328-1551D8C9161B}
 	EndGlobalSection
 EndGlobal
