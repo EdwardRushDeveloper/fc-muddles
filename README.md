@@ -24,6 +24,7 @@ Quick reference notes on the core concepts:
 |---|---|---|---|---|
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Array | [Notes](Array/MergeIntervals/readme.md) · [Code](Array/MergeIntervals/Program.cs) |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Array | [Code](Array/ReverseString/Program.cs) |
+| 2441 | [Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/) | Easy | Array | [Notes](Array/LargestPossibleIntegerWithNegative/readme.md) · [Code](Array/LargestPossibleIntegerWithNegative/Program.cs) |
 | 1239 | [Maximum Length of a Concatenated String with Unique Characters](https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/) | Medium | Array | [Code](Array/MaximumLengthOfConcatenatedString/Program.cs) |
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | Dynamic Programming | [Code](DynamicProgramming/CoinChange/Program.cs) |
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Easy | Dynamic Programming | [Notes](DynamicProgramming/Fibonacci/readme.md) · [Code](DynamicProgramming/Fibonacci/Program.cs) |
