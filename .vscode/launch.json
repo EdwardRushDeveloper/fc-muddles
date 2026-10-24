@@ -18,6 +18,5 @@
             "request": "launch",
             "projectPath": "${workspaceFolder}/Array/MergeIntervals/MergeIntervals.csproj"
         }
-
     ]
 }
