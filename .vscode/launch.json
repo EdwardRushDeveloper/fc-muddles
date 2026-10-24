@@ -4,21 +4,19 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "C#: Fibonacci Debug",
             "type": "dotnet",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/LinkedList/LRUCache/bin/Debug/net5.0/LRUCache.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/LinkedList/LRUCache",
-            "console": "internalConsole",
-            "stopAtEntry": false
+            "projectPath": "${workspaceFolder}/DynamicProgramming/Fibonacci/Fibonacci.csproj"
+            
         },
         {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach"
+            "name": "C#: MergeIntervals Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/Array/MergeIntervals/MergeIntervals.csproj"
         }
     ]
 }
