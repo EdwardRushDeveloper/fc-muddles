@@ -17,18 +17,6 @@
             "type": "dotnet",
             "request": "launch",
             "projectPath": "${workspaceFolder}/Array/MergeIntervals/MergeIntervals.csproj"
-        },
-        {
-            "name": "C#: LRUCache Debug",
-            "type": "dotnet",
-            "request": "launch",
-            "projectPath": "${workspaceFolder}/LinkedList/LRUCache/LRUCache.csproj"
-        },
-        {
-            "name": "C#: LRUCacheVersion2 Debug",
-            "type": "dotnet",
-            "request": "launch",
-            "projectPath": "${workspaceFolder}/LinkedList/LRUCacheVersion2/LRUCacheVersion2.csproj"
         }
     ]
 }
