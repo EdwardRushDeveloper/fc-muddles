@@ -50,7 +50,8 @@ namespace MaxSumOfaPairWithEqualSumOfDigits
         {
             Console.WriteLine("Max Sum of a Pair With Equal Sum of Digits");
 
-            int[] nums = { 18, 43, 36, 13, 7 };
+            //int[] nums = { 18, 43, 36, 13, 7 };
+            int[] nums = [368,369,307,304,384,138,90,279,35,396,114,328,251,364,300,191,438,467,183];
             int result = MaximumSum(nums);
             Console.WriteLine($"Input: nums = [{string.Join(", ", nums)}]");
             Console.WriteLine($"Output: {result}");
