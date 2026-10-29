@@ -24,6 +24,12 @@
             "type": "dotnet",
             "request": "launch",
             "projectPath": "${workspaceFolder}/Practice/Practice/Practice.csproj"
+        },
+        {
+            "name": "C#: MinimumDeletionstoMakeCharacterFrequenciesUnique Debug",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/String/MinimumDeletionstoMakeCharacterFrequenciesUnique/MinimumDeletionstoMakeCharacterFrequenciesUnique.csproj"
         }
     ]
 }

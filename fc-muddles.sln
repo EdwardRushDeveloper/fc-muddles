@@ -41,6 +41,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Practice", "Practice", "{49
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "Practice\Practice\Practice.csproj", "{589C7A74-EC7F-41FB-9E90-CCB690BA33A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumDeletionstoMakeCharacterFrequenciesUnique", "String\MinimumDeletionstoMakeCharacterFrequenciesUnique\MinimumDeletionstoMakeCharacterFrequenciesUnique.csproj", "{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,18 @@ Global
 		{589C7A74-EC7F-41FB-9E90-CCB690BA33A9}.Release|x64.Build.0 = Release|Any CPU
 		{589C7A74-EC7F-41FB-9E90-CCB690BA33A9}.Release|x86.ActiveCfg = Release|Any CPU
 		{589C7A74-EC7F-41FB-9E90-CCB690BA33A9}.Release|x86.Build.0 = Release|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Debug|x64.Build.0 = Debug|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Debug|x86.Build.0 = Debug|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Release|x64.ActiveCfg = Release|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Release|x64.Build.0 = Release|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Release|x86.ActiveCfg = Release|Any CPU
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -225,5 +239,6 @@ Global
 		{76A0D1FC-268A-45F3-8E0F-99DA96D6D1A3} = {8F9A096E-4E6F-0AE2-7328-1551D8C9161B}
 		{38AF288A-A4F0-403C-A73B-2F74B319C788} = {8F9A096E-4E6F-0AE2-7328-1551D8C9161B}
 		{589C7A74-EC7F-41FB-9E90-CCB690BA33A9} = {4999A393-3DA7-F281-F13A-F9FD992FD574}
+		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B} = {13434C82-356F-551A-6C16-4AD5F6C3DB5F}
 	EndGlobalSection
 EndGlobal
