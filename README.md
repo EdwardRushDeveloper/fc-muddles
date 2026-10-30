@@ -32,7 +32,7 @@ Quick reference notes on the core concepts:
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | Medium | Graph / Matrix | [Notes](Graph-Matrix/readme.md) · [Code](Graph-Matrix/NumberOfIslands/Program.cs) |
 | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | Linked List | [Notes](LinkedList/LRUCache/readme.md) · [Code](LinkedList/LRUCache/Program.cs) · [Version 2](LinkedList/LRUCacheVersion2/Program.cs) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked List | [Code](LinkedList/ReverseLinkedList/Program.cs) |
-| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | String | [Code](String/ValidPalindrome/Program.cs) |
+| 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | String | [Notes](String/ValidPalindrome/readme.md) · [Code](String/ValidPalindrome/Program.cs) |
 | 1647 | [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | Medium | String | [Notes](String/MinimumDeletionstoMakeCharacterFrequenciesUnique/readme.md) · [Code](String/MinimumDeletionstoMakeCharacterFrequenciesUnique/Program.cs) |
 
 
