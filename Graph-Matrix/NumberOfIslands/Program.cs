@@ -147,7 +147,9 @@ namespace NumberOfIslands
                          if(matrix[row][column] == '1')
                          {
                                 System.Console.WriteLine(matrix[row][column]);
-                                returnValue += DFS(matrix, row, column);
+                                returnValue += DFSWithStack(matrix, row, column);
+                                //swap with the line above to use the stack version instead of recursion
+                                //returnValue += DFSWithStack(matrix, row, column);
                          }
                     }
                 }
@@ -223,6 +225,119 @@ namespace NumberOfIslands
                 return 1;
 
 
+            }
+
+
+            /*
+                Same DFS as above, but with an explicit Stack<(int,int)> instead of recursion.
+
+                The recursive version can go as deep as the number of land cells in one island.
+                On a 300 x 300 grid of all '1's that is 90,000 nested calls, which can overflow
+                the .NET call stack. Here the cells waiting to be visited are kept in a Stack
+                on the heap, so the depth of the search no longer depends on the call stack.
+
+                1. Check the starting cell the same way DFS does. Return 0 if it is out of bounds or '0'.
+                2. Sink the starting cell and push it onto the stack.
+                3. While the stack is not empty, pop a cell and look at its 4 neighbours.
+                4. Any neighbour that is in bounds and is '1' is sunk and pushed onto the stack.
+                5. When the stack is empty the whole island has been sunk, so return 1.
+
+                A cell is sunk when it is pushed, not when it is popped. This stops the same cell
+                from being pushed more than once by two different neighbours.
+            */
+            public static int DFSWithStack(char[][] matrix, int startRow, int startColumn)
+            {
+                //base case check, same 5 checks as DFS
+                if
+                (
+                    startRow            < 0
+                    || startRow         >= matrix.Length
+                    || startColumn      < 0
+                    || startColumn      >= matrix[startRow].Length
+                    || matrix[startRow][startColumn] == '0'
+                )
+                {
+                    return 0;
+                }
+
+                /*
+                    The 4 directions as (row change, column change).
+                    Rows count up going DOWN the grid, and columns count up going RIGHT.
+
+                                    column - 1    column     column + 1
+                                  ┌────────────┬────────────┬────────────┐
+                        row - 1   │            │    UP      │            │
+                                  │            │  (-1,  0)  │            │
+                                  ├────────────┼────────────┼────────────┤
+                        row       │   LEFT     │  CURRENT   │   RIGHT    │
+                                  │  ( 0, -1)  │ (row,col)  │  ( 0,  1)  │
+                                  ├────────────┼────────────┼────────────┤
+                        row + 1   │            │   DOWN     │            │
+                                  │            │  ( 1,  0)  │            │
+                                  └────────────┴────────────┴────────────┘
+
+                    The corner cells are never checked. Diagonal land is not joined to the island.
+
+                    Adding a direction to the current cell gives the neighbour:
+                        nextRow    = currentRow    + direction.row
+                        nextColumn = currentColumn + direction.column
+
+                    Example: the current cell is (2, 2)
+                        ( 1,  0)  DOWN   →  (3, 2)
+                        (-1,  0)  UP     →  (1, 2)
+                        ( 0,  1)  RIGHT  →  (2, 3)
+                        ( 0, -1)  LEFT   →  (2, 1)
+
+                    The order is down, up, right, left, the same as the recursive calls in DFS.
+                    The order only changes which cell is visited first. Every order gives the same count.
+                */
+                (int row, int column)[] directions = new (int, int)[]
+                {
+                    ( 1,  0),   // DOWN
+                    (-1,  0),   // UP
+                    ( 0,  1),   // RIGHT
+                    ( 0, -1)    // LEFT
+                };
+
+
+                //cells that have been sunk but whose neighbours have not been checked yet
+                Stack<(int row, int column)> stack = new Stack<(int row, int column)>();
+
+                //sink the starting cell and add it to the stack
+                matrix[startRow][startColumn] = '0';
+                stack.Push((startRow, startColumn));
+
+                while (stack.Count > 0)
+                {
+                    (int currentRow, int currentColumn) = stack.Pop();
+
+                    //look at each of the 4 neighbours of the current cell
+                    foreach ((int row, int column) direction in directions)
+                    {
+                        int nextRow = currentRow + direction.row;
+                        int nextColumn = currentColumn + direction.column;
+
+                        //skip the neighbour if it is out of bounds or is water
+                        if
+                        (
+                            nextRow             < 0
+                            || nextRow          >= matrix.Length
+                            || nextColumn       < 0
+                            || nextColumn       >= matrix[nextRow].Length
+                            || matrix[nextRow][nextColumn] == '0'
+                        )
+                        {
+                            continue;
+                        }
+
+                        //sink the neighbour now so it can't be pushed again, then visit it later
+                        matrix[nextRow][nextColumn] = '0';
+                        stack.Push((nextRow, nextColumn));
+                    }
+                }
+
+                //the whole island has been sunk
+                return 1;
             }
     }
 }
