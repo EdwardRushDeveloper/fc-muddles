@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumDeletionstoMakeChara
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularCharacterRoll", "Array\CircularCharacterRoll\CircularCharacterRoll.csproj", "{7EA9E570-A0CB-4819-AA4D-3B74001C8105}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "No3IdenticalConsecutiveLetters", "String\No3IdenticalConsecutiveLetters\No3IdenticalConsecutiveLetters.csproj", "{54D7EB98-AA72-4117-94C9-5207090083CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -235,6 +237,18 @@ Global
 		{7EA9E570-A0CB-4819-AA4D-3B74001C8105}.Release|x64.Build.0 = Release|Any CPU
 		{7EA9E570-A0CB-4819-AA4D-3B74001C8105}.Release|x86.ActiveCfg = Release|Any CPU
 		{7EA9E570-A0CB-4819-AA4D-3B74001C8105}.Release|x86.Build.0 = Release|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Debug|x64.Build.0 = Debug|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Debug|x86.Build.0 = Debug|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Release|x64.ActiveCfg = Release|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Release|x64.Build.0 = Release|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Release|x86.ActiveCfg = Release|Any CPU
+		{54D7EB98-AA72-4117-94C9-5207090083CF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -255,5 +269,6 @@ Global
 		{589C7A74-EC7F-41FB-9E90-CCB690BA33A9} = {4999A393-3DA7-F281-F13A-F9FD992FD574}
 		{463D66A2-04A3-4FCF-B8DD-5572A6314E5B} = {13434C82-356F-551A-6C16-4AD5F6C3DB5F}
 		{7EA9E570-A0CB-4819-AA4D-3B74001C8105} = {8F9A096E-4E6F-0AE2-7328-1551D8C9161B}
+		{54D7EB98-AA72-4117-94C9-5207090083CF} = {13434C82-356F-551A-6C16-4AD5F6C3DB5F}
 	EndGlobalSection
 EndGlobal

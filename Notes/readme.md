@@ -21,6 +21,22 @@ Usually sent for entry to mid-level SWE roles. Senior and rehire candidates ofte
 - Min steps/moves to make an array valid or balanced | 	Greedy or prefix sums
 - Lexicographically smallest string after removing one character. Remove the first character that’s bigger than the one after it
 
+# Recent assessment reports (2025–2026)
+
+Microsoft doesn’t publish which problems it uses, so there’s no official “most recent testing” list. What exists are candidate reports collected by prep sites, mostly from intern and new-grad assessments in 2025–2026. Those reports repeat the same few problems.
+
+**Problems candidates report most often (HackerRank, sometimes Codility)**
+
+| Problem | Description | Approach |
+|---|---|---|
+| Circular Character Roll | For each `roll[i]`, shift the first `roll[i]` characters of a string forward one letter, wrapping `z → a`. | Difference (prefix-sum) array instead of simulating each roll |
+| No 3 identical consecutive letters | Remove the fewest characters so no 3 identical letters are consecutive (strings of only `a` and `b`). | Greedy single pass |
+| Stacks/Blocks Conversion | Every 2 blocks in a stack merge into 1 that carries to the next stack, like binary carry. Return the leftover blocks. | Carry forward stack by stack |
+| Subarray Permutation Check | In a permutation of `1..N`, decide whether any length-K subarray is a permutation of `1..K`. | Sliding window |
+| Dual Intern Task Allocation | Assign exactly `k` tasks to one person and the rest to another to maximize total reward. | Greedy: sort or heap on the gain from moving each task |
+
+
+
 
 # Links
 
