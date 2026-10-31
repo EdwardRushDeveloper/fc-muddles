@@ -6,6 +6,9 @@ public class Program
     {
         Console.Clear();
 
+
+        NumberOfIslands.Execute();
+        
         /// Fibonacci Practice
         string[] fib = ["63"];
         //Practice
