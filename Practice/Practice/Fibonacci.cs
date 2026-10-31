@@ -6,28 +6,28 @@ public class Fibonacci
     {
 
         //The Fibonacci sequence to 6 is fs=[0,1,1,2,3,5,8]. With zero-based indexing fs[5] = 5 (fs[5] is the index of the number that needs to be returned)
-
+        Console.WriteLine("******************** Fibonacci");
         int indexOfNumberToReturn = int.Parse(args[0]);
-        Console.WriteLine($"Passed In Argument {indexOfNumberToReturn}");
-        Console.Clear();
+        //Console.WriteLine($"Passed In Argument {indexOfNumberToReturn}");
+
         Dictionary<int, long> memo = new Dictionary<int, long>();
 
         long returnedValue = Calculate(indexOfNumberToReturn, memo, "");
-        Console.WriteLine(returnedValue);
+        Console.WriteLine($"Fibonacci for {indexOfNumberToReturn}: {returnedValue}");
 
-        Winder(10);
+        //Winder(10);
     }
 
     protected static long Calculate(int n, Dictionary<int, long> memo, string side)
     {
         long output = 0;
 
-        if (side == "first") Console.WriteLine($"Winding In: {n}");
-        if (side == "second") Console.WriteLine($"Winding Out (2): {n}");
+        //if (side == "first") Console.WriteLine($"Winding In: {n}");
+        //if (side == "second") Console.WriteLine($"Winding Out (2): {n}");
 
         if (memo.TryGetValue(n, out output))
         {
-            Console.WriteLine($"Found: {output}");
+            //Console.WriteLine($"Found: {output}");
             return output;
         }
         //base case
@@ -38,7 +38,7 @@ public class Fibonacci
         long first = Calculate(n - 1, memo, "first");
         long second = Calculate(n - 2, memo, "second");
         long f = first + second;
-        Console.WriteLine($"Adding calculation {f}");
+        //Console.WriteLine($"Adding calculation {f}");
         memo.TryAdd(n, f);
         return f;
     }
