@@ -18,10 +18,105 @@ public class NumberOfIslands
                     new char[]{ '0','0','0','1','1' }
         };
 
-        int result = CountIslands(matrix);
+        int result = DFSP2(matrix);
 
         Console.WriteLine($"Number Of Islands Result {result}");
     }
+
+    public static int DFSP2(char[][] matrix)
+    {
+        int returnValue = 0;
+
+        for (int row = 0; row < matrix.Length; row++)
+        {
+            Console.WriteLine($"Row Number {row}");
+            for (int column = 0; column < matrix[row].Length; column++)
+            {
+                //if the current row and column value is 1, then we need to check up,down,right and left and flag those as visited
+                if (matrix[row][column] == '1')
+                {
+                    returnValue += DFSP2Work(matrix, row, column);
+                }
+            }
+        }
+        return returnValue;
+    }
+
+    public static int DFSP2Work(char[][] matrix, int startRow, int startColumn)
+    {
+        //we need to do five checks
+
+        if (
+            startRow >= matrix.Length
+            || startColumn < 0
+         )
+        {
+            return 0;
+        }
+
+        //create a tuple array to flag our directions
+        (int row, int column)[] directions = new (int, int)[]
+        {
+                    ( 1,  0),   // DOWN
+                    (-1,  0),   // UP
+                    ( 0,  1),   // RIGHT
+                    ( 0, -1)    // LEFT
+
+        };
+
+        
+        //to prevent from running out of space, use a stack
+        //the stack is used for the looping mechanism
+        Stack<(int row, int column)> stack = new Stack<(int row, int column)>();
+
+
+        //initialize and sink the first cell using the provided indexes
+        matrix[startRow][startColumn] = '0';
+        stack.Push((startRow, startColumn));
+
+        //what do we do from here
+
+        while(stack.Count > 0)
+        {
+            //pop an item off of the stack
+            (int currentRow, int currentColumn)= stack.Pop();
+
+            //loop through all of the directions an add the ones that are not visited
+            foreach((int row, int column)direction in directions)
+            {
+
+                //start looking up, down left and right based on the current direction
+
+                int nextRow = currentRow + direction.row;
+                int nextColumn = currentColumn + direction.column;
+
+                if(
+                    nextRow < 0 //Check the Top: see if we are trying to go beyond the bounds of the matrix on the row top and bottom
+                    || nextRow >= matrix.Length //Check the Bottom
+                    || nextColumn < 0
+                    || nextColumn >= matrix[nextRow].Length //check the end of the column list
+                    || matrix[nextRow][nextColumn] == '0' //if the item has already been visited
+                )
+                {
+                    continue;
+                }
+                //if all the checks pass, then set item as visited, and add it to the stack to see if it has any 
+                matrix[nextRow][nextColumn] = '0';
+                stack.Push((nextRow, nextColumn));
+
+            }
+
+        }
+
+        return 1;
+
+    }
+
+
+
+
+
+
 
     /// <summary>
     /// Scans every cell of the grid and counts the islands.
@@ -118,12 +213,12 @@ public class NumberOfIslands
            The order only changes which cell is visited first. Every order gives the same count.
        */
 
-       //tuple array
+        //tuple array
         (int row, int column)[] directions = new (int, int)[]
         {
                     ( 1,  0),   // DOWN
                     (-1,  0),   // UP
-                    ( 0,  1),   // RIGHT
+                    ( 0,  1),   // RIGHT6
                     ( 0, -1)    // LEFT
         };
 
@@ -168,5 +263,7 @@ public class NumberOfIslands
         //the whole island has been sunk
         return 1;
     }
+
+
 
 }
