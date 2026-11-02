@@ -36,6 +36,7 @@ Quick reference notes on the core concepts:
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | String | [Notes](String/ValidPalindrome/readme.md) · [Code](String/ValidPalindrome/Program.cs) |
 | 1647 | [Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/) | Medium | String | [Notes](String/MinimumDeletionstoMakeCharacterFrequenciesUnique/readme.md) · [Code](String/MinimumDeletionstoMakeCharacterFrequenciesUnique/Program.cs) |
 | 1957 | [Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) | Easy | String | [Notes](String/No3IdenticalConsecutiveLetters/readme.md) · [Code](String/No3IdenticalConsecutiveLetters/Program.cs) |
+| 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | Medium | Tree | [Notes](Tree/LowestCommonAncestorofBinaryTree/readme.md) · [Code](Tree/LowestCommonAncestorofBinaryTree/Program.cs) |
 
 
 ## Project Requirements
