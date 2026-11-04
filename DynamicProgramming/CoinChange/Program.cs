@@ -76,7 +76,7 @@ namespace CoinChange
                 of coins.
            */
             int[] coins = new int[] { 1, 2, 5 };
-            int amount = 12;
+            int amount = 8;
             int combinations = CoinChange(coins, amount);
 
             System.Console.WriteLine("");
